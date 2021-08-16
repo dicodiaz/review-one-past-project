@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 id="title">Encuesta</h1>
+    <p id="description">Esta es la encuesta de prueba para el trial de Microverse</p>
+    <div id="form">
+        <form id="survey-form">
+            <label for="name" id="name-label">Nombre</label>
+            <input id="name" type="text" name="name" placeholder="Nombre" required><br>
+            <label for="email" id="email-label">Correo</label>
+            <input id="email" type="email" name="email" placeholder="Correo" required><br>
+            <label for="number" id="number-label">Edad</label>
+            <input id="number" type="number" name="number" required min="1" max="110" placeholder="Edad"><br>
+            <label for="dropdown" id="dropdown-label">Selecciona una opción</label>
+            <select id="dropdown" name="dropdown">
+              <option value="" disabled selected hidden>Selecciona una opción</option>
+              <option value="item-1">Opción 1</option>
+              <option value="item-2">Opción 2</option>
+              <option value="item-3">Opción 3</option>
+              <option value="item-4">Opción 4</option>
+            </select><br>
+            <label for="radio" id="radio-label">Selecciona una opción</label><br><br>
+            <input type="radio" name="radio" value="item-1">Opción 1<br>
+            <input type="radio" name="radio" value="item-2">Opción 2<br>
+            <input type="radio" name="radio" value="item-3">Opción 3<br>
+            <input type="radio" name="radio" value="item-4">Opción 4<br>
+            <div id="checkbox">
+                <p id="checkboxP">Selecciona una opción</p>
+                <input type="checkbox" id="checkbox1" name="checkbox1" value="item-1">
+                <label for="checkbox1">Opción 1</label><br>
+                <input type="checkbox" id="checkbox2" name="checkbox2" value="item-2">
+                <label for="checkbox2">Opción 2</label><br>
+                <input type="checkbox" id="checkbox3" name="checkbox3" value="item-3">
+                <label for="checkbox3">Opción 3</label><br>
+                <input type="checkbox" id="checkbox4" name="checkbox4" value="item-4">
+                <label for="checkbox4">Opción 4</label><br>
+            </div>
+            <textarea id="textarea" name="textarea" rows="10" cols="30" maxlength="500" placeholder="Escribe algo"></textarea><br><br>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
